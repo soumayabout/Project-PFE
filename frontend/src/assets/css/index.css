@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+    --primary-color: #121481;       
+    --secondary-color: #615EFC;     
+    --tertiary-color: #FFBF00;   
+
+    --link-color: #FF4500;          
+    --accent-color: #00BFFF;       
+
+    --black-color: #220217;        
+    --white-color: #ffffff;         
+
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Plus Jakarta Sans', sans-serif;
+}

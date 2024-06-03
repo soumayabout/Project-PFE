@@ -1,0 +1,91 @@
+/* Variables globales pour les couleurs et les espacements */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f7f7f7;
+  --input-background: #fff;
+  --input-border: #ddd;
+  --input-border-focus: #80bdff;
+  --font-color: #333;
+  --font-color-light: #555;
+  --border-radius: 8px;
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  --spacing: 1rem;
+  --transition: all 0.3s ease;
+}
+
+.profile-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.profile-container:hover {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-header h2 {
+  font-size: 2rem;
+  color: var(--font-color);
+  margin: 0;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+}
+
+.profile-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-label {
+  font-size: 1rem;
+  color: var(--font-color-light);
+  margin-bottom: 0.5rem;
+}
+
+.profile-input {
+  padding: 0.75rem;
+  border: 1px solid var(--input-border);
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: var(--input-background);
+  color: var(--font-color);
+  transition: var(--transition);
+}
+
+.profile-input:focus {
+  border-color: var(--input-border-focus);
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.profile-input[readonly] {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    padding: 1rem;
+  }
+
+  .profile-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-input {
+    font-size: 0.875rem;
+  }
+}
